@@ -1,6 +1,7 @@
 {
-    "name": "@tic-tac-toe/typescript-config",
+    "name": "@tic-tac-toe/socket-with-types",
     "version": "0.0.0",
+    "main": "index.ts",
     "private": true,
     "license": "MIT",
     "publishConfig": {

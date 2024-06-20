@@ -1,0 +1,7 @@
+{
+    "extends": "@tic-tac-toe/typescript-config/server.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist"
+    }
+}
