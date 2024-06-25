@@ -1,5 +1,5 @@
 export const generateRandomId = () => {
-    // TODO : Implement a better function for the same
+    // [ ] Implement a better function for the same
 
     const characters =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

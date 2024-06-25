@@ -17,13 +17,13 @@
     "license": "ISC",
     "description": "Server for the TicTacToe multiplayer",
     "devDependencies": {
-        "@types/consola": "^2.2.5",
         "@types/express": "^4.17.21",
         "@types/node": "^20.14.2",
         "typescript": "^5.4.5"
     },
     "dependencies": {
         "@tic-tac-toe/socket-with-types": "*",
+        "@tic-tac-toe/utils": "*",
         "consola": "^3.2.3",
         "cors": "^2.8.5",
         "dotenv": "^16.4.5",

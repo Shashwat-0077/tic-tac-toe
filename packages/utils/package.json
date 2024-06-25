@@ -1,6 +1,7 @@
 {
-    "name": "@tic-tac-toe/typescript-config",
+    "name": "@tic-tac-toe/utils",
     "version": "0.0.0",
+    "main": "index.ts",
     "license": "MIT",
     "publishConfig": {
         "access": "public"

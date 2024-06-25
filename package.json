@@ -3,9 +3,14 @@
     "private": true,
     "scripts": {
         "build": "turbo build",
-        "dev": "turbo dev",
         "lint": "turbo lint",
-        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "dev": "turbo dev",
+        "dev:client": "yarn workspace @tic-tac-toe/client run dev",
+        "dev:server": "yarn workspace @tic-tac-toe/server run dev",
+        "add-shad-ui": "cd ./apps/client & npx shadcn-ui@latest add",
+        "add:client": "yarn workspace @tic-tac-toe/client add",
+        "add:server": "yarn workspace @tic-tac-toe/server add"
     },
     "devDependencies": {
         "prettier": "^3.2.5",

@@ -1,4 +1,8 @@
-import { io } from "socket.io-client";
+import { io, Socket } from "socket.io-client";
+import {
+    ServerToClientEvents,
+    ClientToServerEvents,
+} from "@tic-tac-toe/socket-with-types";
 
 // "undefined" means the URL will be computed from the `window.location` object
 const URL =
@@ -7,6 +11,9 @@ const URL =
           "http://localhost:4000"
         : "http://localhost:4000";
 
-export const socket = io(URL, {
-    autoConnect: false,
-});
+export const socket: Socket<ServerToClientEvents, ClientToServerEvents> = io(
+    URL + "/classic-mode",
+    {
+        autoConnect: false,
+    }
+);

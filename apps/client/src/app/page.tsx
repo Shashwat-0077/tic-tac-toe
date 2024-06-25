@@ -1,4 +1,3 @@
-import EnterRoomID from "@/components/EnterRoomID";
 import RoomButtons from "@/components/roomButtons";
 import Image from "next/image";
 

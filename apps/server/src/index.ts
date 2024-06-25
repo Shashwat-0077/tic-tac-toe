@@ -1,9 +1,7 @@
+import "dotenv/config";
 import express from "express";
 import bodyParser from "body-parser";
-import { Server } from "socket.io";
-import "dotenv/config";
-import consola from "consola";
-import Room from "./roomManager.js";
+import { Server, Socket } from "socket.io";
 import { mainGame } from "./sockets.js";
 import {
     ClientToServerEvents,
@@ -11,6 +9,7 @@ import {
     InterServerEvents,
     SocketData,
     ServerWithTypes,
+    SocketWithType,
 } from "@tic-tac-toe/socket-with-types";
 
 const app = express();
@@ -36,5 +35,6 @@ const io = new Server<
     },
 });
 
-io.on("connection", (abc: any) => {});
-mainGame(io);
+const classicMode = io.of("/classic-mode");
+
+mainGame(classicMode);
