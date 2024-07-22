@@ -6,6 +6,7 @@
         "lint": "turbo lint",
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "dev": "turbo dev",
+        "test": "jest",
         "dev:client": "yarn workspace @tic-tac-toe/client run dev",
         "dev:server": "yarn workspace @tic-tac-toe/server run dev",
         "add-shad-ui": "cd ./apps/client & npx shadcn-ui@latest add",
@@ -13,6 +14,7 @@
         "add:server": "yarn workspace @tic-tac-toe/server add"
     },
     "devDependencies": {
+        "jest": "^29.7.0",
         "prettier": "^3.2.5",
         "turbo": "^2.0.4",
         "typescript": "^5.4.5"

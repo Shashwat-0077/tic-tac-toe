@@ -1,1 +1,3 @@
 -   [ ] Change the functionality of share room code to sharing room link
+-   [ ] i recommend creating a new project and refactor the code 1 by 1
+-   [ ] we did'nt really use the socket data, make use of it bro

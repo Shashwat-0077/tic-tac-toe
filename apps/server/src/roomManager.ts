@@ -3,7 +3,6 @@ import { Server, Socket } from "socket.io";
 import {
     NamespaceWithTypes,
     RoomType,
-    ServerWithTypes,
     SocketWithType,
 } from "@tic-tac-toe/socket-with-types";
 import { generateRandomId } from "@tic-tac-toe/utils";
